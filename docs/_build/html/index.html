@@ -70,7 +70,21 @@
 <p><code class="docutils literal notranslate"><span class="pre">PyHTBcli</span></code> is a Python command line interface for interacting with HackTheBox.</p>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline"></a></h2>
+<section id="requirements">
+<h3>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline"></a></h3>
+<p>Make sure <code class="docutils literal notranslate"><span class="pre">nmcli</span></code> is installed. Present on most Linux distros. Install with <code class="docutils literal notranslate"><span class="pre">apt</span> <span class="pre">install</span> <span class="pre">network-manager</span></code>.</p>
+<p>To make fonts print nicely, need a Nerd Font. Install:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ryanoasis</span><span class="o">/</span><span class="n">nerd</span><span class="o">-</span><span class="n">fonts</span><span class="o">/</span><span class="n">releases</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="n">v2</span><span class="mf">.1.0</span><span class="o">/</span><span class="n">Ubuntu</span><span class="o">.</span><span class="n">zip</span> <span class="o">-</span><span class="n">O</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">Ubuntu</span><span class="o">.</span><span class="n">zip</span>
+<span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="o">~/.</span><span class="n">local</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">fonts</span>
+<span class="n">unzip</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">Ubuntu</span><span class="o">.</span><span class="n">zip</span> <span class="o">-</span><span class="n">d</span> <span class="o">~/.</span><span class="n">local</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">fonts</span>
+<span class="n">fc</span><span class="o">-</span><span class="n">cache</span> <span class="o">-</span><span class="n">fv</span>
+</pre></div>
+</div>
+</section>
+<section id="install-pyhtbcli">
+<h3>Install PyHTBcli<a class="headerlink" href="#install-pyhtbcli" title="Permalink to this headline"></a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">pyHTBcli</span></code></p>
+</section>
 </section>
 <section id="running">
 <h2>Running<a class="headerlink" href="#running" title="Permalink to this headline"></a></h2>

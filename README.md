@@ -1,6 +1,7 @@
 # htbcli
 HackTheBox Command Line Tool
 
+![](images/htb-list-competitive.png)
 
 # Requirements
 

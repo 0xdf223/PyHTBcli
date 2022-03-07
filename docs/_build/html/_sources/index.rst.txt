@@ -9,6 +9,22 @@ PyHTBcli
 
 Installation
 ------------
+
+Requirements
+^^^^^^^^^^^^
+
+Make sure ``nmcli`` is installed. Present on most Linux distros. Install with ``apt install network-manager``.
+
+To make fonts print nicely, need a Nerd Font. Install::
+
+    wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Ubuntu.zip -O /tmp/Ubuntu.zip
+    mkdir -p ~/.local/share/fonts
+    unzip /tmp/Ubuntu.zip -d ~/.local/share/fonts
+    fc-cache -fv
+
+Install PyHTBcli
+^^^^^^^^^^^^^^^^
+
 ``pip install pyHTBcli``
 
 Running
