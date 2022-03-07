@@ -18,7 +18,7 @@ $ apt-get install network-manager
 
 ## Fonts
 
-To make the icons print nicely, need a nerd font installed.
+To make the icons print nicely, need a [nerd font](https://www.nerdfonts.com/) installed.
 
 Install instructions (Linux):
 
@@ -62,3 +62,7 @@ Add this to `~/.config/fish/completions/htb.fish`:
 ```bash
 eval (env _HTB_COMPLETE=fish_source htb)
 ```
+
+## Full Documention
+
+See [readthedocs](https://pyhtbcli.readthedocs.io/en/latest/) for full documentation.
