@@ -6,3 +6,6 @@ coverage:
 
 pdb:
 	python -m pytest -n auto --pdb
+
+build:
+	python -m build

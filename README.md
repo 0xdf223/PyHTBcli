@@ -31,9 +31,7 @@ fc-cache -fv
 # Installation
 
 ```bash
-git clone https://github.com/0xdf-htb/htbcli
-cd htbcli
-pip install .
+pip install PyHTBcli
 ```
 
 # Shell Auto Complete

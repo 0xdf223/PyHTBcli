@@ -8,3 +8,4 @@ pytest-subprocess>=1.4.1
 pytest-xdist>=2.5.0 
 setuptools
 twine
+build
