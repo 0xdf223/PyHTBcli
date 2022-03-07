@@ -9,3 +9,6 @@ pytest-xdist>=2.5.0
 setuptools
 twine
 build
+sphinx
+sphinx_rtd_theme
+sphinx_click

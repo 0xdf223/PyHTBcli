@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>box — box Commands &mdash; HTBCli 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="vpn — vpn Commands" href="vpn.html" />
+    <link rel="prev" title="PyHTBcli" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> HTBCli
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">box</span></code> — box Commands</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#box">box</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#box-list">list</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#box-list-all">all</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#box-list-competitive">competitive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#box-list-from">from</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#box-list-todo">todo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#box-list-unowned">unowned</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#box-power">power</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#box-power-off">off</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#box-power-on">on</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#box-power-reset">reset</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#box-query">query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#box-status">status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#box-submit">submit</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vpn.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">vpn</span></code> — vpn Commands</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">HTBCli</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><code class="xref py py-mod docutils literal notranslate"><span class="pre">box</span></code> — box Commands</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/box.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="box-box-commands">
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">box</span></code> — box Commands<a class="headerlink" href="#box-box-commands" title="Permalink to this headline"></a></h1>
+<section id="box">
+<h2>box<a class="headerlink" href="#box" title="Permalink to this headline"></a></h2>
+<p>Information and interaction with Boxes</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>box <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+</pre></div>
+</div>
+<section id="box-list">
+<h3>list<a class="headerlink" href="#box-list" title="Permalink to this headline"></a></h3>
+<p>Commands to list specific sets of boxes</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>box list <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+</pre></div>
+</div>
+<section id="box-list-all">
+<h4>all<a class="headerlink" href="#box-list-all" title="Permalink to this headline"></a></h4>
+<p>Print all boxes</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>box list all <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-box-list-all-force-pager">
+<span id="cmdoption-box-list-all-no-pager"></span><span class="sig-name descname"><span class="pre">--force-pager</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--no-pager</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-box-list-all-force-pager" title="Permalink to this definition"></a></dt>
+<dd><p>Force or disable the pager on output. If not specified, application will pick.</p>
+</dd></dl>
+
+</section>
+<section id="box-list-competitive">
+<h4>competitive<a class="headerlink" href="#box-list-competitive" title="Permalink to this headline"></a></h4>
+<p>Print competitive boxes</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>box list competitive <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-box-list-competitive-force-pager">
+<span id="cmdoption-box-list-competitive-no-pager"></span><span class="sig-name descname"><span class="pre">--force-pager</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--no-pager</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-box-list-competitive-force-pager" title="Permalink to this definition"></a></dt>
+<dd><p>Force or disable the pager on output. If not specified, application will pick.</p>
+</dd></dl>
+
+</section>
+<section id="box-list-from">
+<h4>from<a class="headerlink" href="#box-list-from" title="Permalink to this headline"></a></h4>
+<p>Get boxes from a given author</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>box list from <span class="o">[</span>OPTIONS<span class="o">]</span> AUTHOR
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-box-list-from-force-pager">
+<span id="cmdoption-box-list-from-no-pager"></span><span class="sig-name descname"><span class="pre">--force-pager</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--no-pager</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-box-list-from-force-pager" title="Permalink to this definition"></a></dt>
+<dd><p>Force or disable the pager on output. If not specified, application will pick.</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-box-list-from-arg-AUTHOR">
+<span id="cmdoption-box-list-from-arg-author"></span><span class="sig-name descname"><span class="pre">AUTHOR</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-box-list-from-arg-AUTHOR" title="Permalink to this definition"></a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</section>
+<section id="box-list-todo">
+<h4>todo<a class="headerlink" href="#box-list-todo" title="Permalink to this headline"></a></h4>
+<p>Print boxes on todo list</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>box list todo <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-box-list-todo-force-pager">
+<span id="cmdoption-box-list-todo-no-pager"></span><span class="sig-name descname"><span class="pre">--force-pager</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--no-pager</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-box-list-todo-force-pager" title="Permalink to this definition"></a></dt>
+<dd><p>Force or disable the pager on output. If not specified, application will pick.</p>
+</dd></dl>
+
+</section>
+<section id="box-list-unowned">
+<h4>unowned<a class="headerlink" href="#box-list-unowned" title="Permalink to this headline"></a></h4>
+<p>Print unowned boxes</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>box list unowned <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-box-list-unowned-active-only">
+<span class="sig-name descname"><span class="pre">--active-only</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-box-list-unowned-active-only" title="Permalink to this definition"></a></dt>
+<dd><p>Filter to only active boxes</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-box-list-unowned-force-pager">
+<span id="cmdoption-box-list-unowned-no-pager"></span><span class="sig-name descname"><span class="pre">--force-pager</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--no-pager</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-box-list-unowned-force-pager" title="Permalink to this definition"></a></dt>
+<dd><p>Force or disable the pager on output. If not specified, application will pick.</p>
+</dd></dl>
+
+</section>
+</section>
+<section id="box-power">
+<h3>power<a class="headerlink" href="#box-power" title="Permalink to this headline"></a></h3>
+<p>Information and interaction with Boxes having to do with powering</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>box power <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+</pre></div>
+</div>
+<section id="box-power-off">
+<h4>off<a class="headerlink" href="#box-power-off" title="Permalink to this headline"></a></h4>
+<p>Power off active machine, lab or release arena</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>box power off <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-box-power-off-release-arena">
+<span id="cmdoption-box-power-off-ra"></span><span class="sig-name descname"><span class="pre">--release-arena</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--ra</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-box-power-off-release-arena" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="box-power-on">
+<h4>on<a class="headerlink" href="#box-power-on" title="Permalink to this headline"></a></h4>
+<p>Search for a box with the given name and power it on</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>box power on <span class="o">[</span>OPTIONS<span class="o">]</span> BOX_NAME
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-box-power-on-f">
+<span id="cmdoption-box-power-on-force"></span><span class="sig-name descname"><span class="pre">-f</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--force</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-box-power-on-f" title="Permalink to this definition"></a></dt>
+<dd><p>If you already have a powered on machine, power it off and power new machine on</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-box-power-on-arg-BOX_NAME">
+<span id="cmdoption-box-power-on-arg-box-name"></span><span class="sig-name descname"><span class="pre">BOX_NAME</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-box-power-on-arg-BOX_NAME" title="Permalink to this definition"></a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</section>
+<section id="box-power-reset">
+<h4>reset<a class="headerlink" href="#box-power-reset" title="Permalink to this headline"></a></h4>
+<p>Reset current active machine, lab or release arena</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>box power reset <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-box-power-reset-release-arena">
+<span id="cmdoption-box-power-reset-ra"></span><span class="sig-name descname"><span class="pre">--release-arena</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--ra</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-box-power-reset-release-arena" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+</section>
+<section id="box-query">
+<h3>query<a class="headerlink" href="#box-query" title="Permalink to this headline"></a></h3>
+<p>Use more complex criteria to search for boxes</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>box query <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-box-query-force-pager">
+<span id="cmdoption-box-query-no-pager"></span><span class="sig-name descname"><span class="pre">--force-pager</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--no-pager</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-box-query-force-pager" title="Permalink to this definition"></a></dt>
+<dd><p>Force or disable the pager on output. If not specified, application will pick.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-box-query-competitive">
+<span class="sig-name descname"><span class="pre">--competitive</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-box-query-competitive" title="Permalink to this definition"></a></dt>
+<dd><p>Limit search to competitive machines only</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-box-query-non-competitive">
+<span class="sig-name descname"><span class="pre">--non-competitive</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-box-query-non-competitive" title="Permalink to this definition"></a></dt>
+<dd><p>Limit search to non-competitive (retired) only</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-box-query-d">
+<span id="cmdoption-box-query-diff"></span><span class="sig-name descname"><span class="pre">-d</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--diff</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;diff&gt;</span></span><a class="headerlink" href="#cmdoption-box-query-d" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Options</dt>
+<dd class="field-odd"><p>E | M | H | I</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-box-query-todo">
+<span class="sig-name descname"><span class="pre">--todo</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-box-query-todo" title="Permalink to this definition"></a></dt>
+<dd><p>Limit search to todo list</p>
+</dd></dl>
+
+</section>
+<section id="box-status">
+<h3>status<a class="headerlink" href="#box-status" title="Permalink to this headline"></a></h3>
+<p>Print current active machine</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>box status <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+</section>
+<section id="box-submit">
+<h3>submit<a class="headerlink" href="#box-submit" title="Permalink to this headline"></a></h3>
+<p>Submit a flag for a box</p>
+<div class="line-block">
+<div class="line">MACHINE - The name of the machine to submit for (case insensitive)</div>
+<div class="line">FLAG - The flag from <cite>user.txt</cite> or <cite>root.txt</cite></div>
+<div class="line">DIFFICULTY - An integer from 1 to 10, where 10 is the hardest</div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>box submit <span class="o">[</span>OPTIONS<span class="o">]</span> MACHINE FLAG DIFFICULTY
+</pre></div>
+</div>
+<p class="rubric">Arguments</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-box-submit-arg-MACHINE">
+<span id="cmdoption-box-submit-arg-machine"></span><span class="sig-name descname"><span class="pre">MACHINE</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-box-submit-arg-MACHINE" title="Permalink to this definition"></a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-box-submit-arg-FLAG">
+<span id="cmdoption-box-submit-arg-flag"></span><span class="sig-name descname"><span class="pre">FLAG</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-box-submit-arg-FLAG" title="Permalink to this definition"></a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-box-submit-arg-DIFFICULTY">
+<span id="cmdoption-box-submit-arg-difficulty"></span><span class="sig-name descname"><span class="pre">DIFFICULTY</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-box-submit-arg-DIFFICULTY" title="Permalink to this definition"></a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="PyHTBcli" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="vpn.html" class="btn btn-neutral float-right" title="vpn — vpn Commands" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, 0xdf.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
