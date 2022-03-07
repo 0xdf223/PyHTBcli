@@ -10,5 +10,5 @@ setuptools
 twine
 build
 sphinx
-sphinx_rtd_theme
-sphinx_click
+sphinx-rtd-theme
+sphinx-click
