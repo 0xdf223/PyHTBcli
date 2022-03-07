@@ -39,7 +39,7 @@ pip install PyHTBcli
 
 To get tab completion in the default linux shell.
 
-## Bach
+## Bash
 
 Add this line to `~/.bashrc`:
 

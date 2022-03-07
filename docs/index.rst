@@ -27,6 +27,22 @@ Install PyHTBcli
 
 ``pip install pyHTBcli``
 
+
+Shell Auto-Complete
+^^^^^^^^^^^^^^^^^^^
+
+Bash: Add this line to ~/.bashrc::
+
+    eval "$(_htb_COMPLETE=bash_source htb)"
+
+Zsh: Add this line to ~/.zshrc::
+
+    eval "$(_HTB_COMPLETE=zsh_source htb)"
+
+Fish: Add this to ~/.config/fish/completions/htb.fish::
+
+    eval (env _HTB_COMPLETE=fish_source htb)
+
 Running
 -------
 
