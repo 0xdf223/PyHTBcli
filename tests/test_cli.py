@@ -15,13 +15,3 @@ def test_no_cache(runner):
     )
     assert banner in res.output
     assert res.output.endswith("\n\nHackTheBox> \n")
-
-
-def test_status(runner):
-    """Test `htb status`"""
-    res = runner.invoke(cli, ["status"])
-    assert "US VIP 7" in res.output
-    assert "EU Release Lab 1" in res.output
-    assert "IP:              10.10.11.145" in res.output
-    assert "Name:            RouterSpace" in res.output
-

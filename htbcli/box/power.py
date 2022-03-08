@@ -23,7 +23,6 @@ def power():
 @click.argument("Box_Name")
 def on(client: HTBClient, force: bool, box_name: str):
     """Search for a box with the given name and power it on"""
-    # import pdb;pdb.set_trace()
     try:
         box = client.get_machine(box_name)
     except NotFoundException:
@@ -44,7 +43,6 @@ def on(client: HTBClient, force: bool, box_name: str):
                 return False
 
         output.info(f"Powering off {active.machine.name}...")
-        # import pdb;pdb.set_trace()
         active.stop()
 
     try:

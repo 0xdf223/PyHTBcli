@@ -48,25 +48,3 @@ def patch_htb_client(monkeypatch):
 @fixture(autouse=True)
 def patch_sleep(monkeypatch):
     monkeypatch.setattr(time, "sleep", lambda x: True)
-
-
-# @fixture(autouse=True)
-# def patch_subprocess(fp):
-#     fp.keep_last_process(True)
-#     fp.register(
-#         "nmcli connection export htbcli".split(), stdout=NMCLI_CONNECTION_EXPORT_HTBCLI
-#     )
-#     fp.register(
-#         "nmcli connection show --active".split(), stdout=NMCLI_CONNECTION_SHOW_ACTIVE
-#     )
-#     fp.register(
-#         "nmcli -g ip4.address connection show htbcli".split(), stdout="10.10.14.18/23\n"
-#     )
-#     fp.register("nmcli connection show".split(), stdout=NMCLI_CONNECTION_SHOW)
-#     fp.register(
-#         "nmcli connection delete htbcli".split(),
-#         stdout="Connection 'htbcli' (34bde648-0a9a-4dc0-abb4-e72b0c527cfd) successfully deleted.",
-#     )
-#     fp.register("nmcli connection import type openvpn file".split() + [fp.any()])
-#     fp.register("nmcli connection modify htbcli ipv4.never-default true".split())
-#     fp.register("nmcli connection down id htbcli".split())

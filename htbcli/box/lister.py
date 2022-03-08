@@ -54,9 +54,6 @@ def todo(client: HTBClient, pager):
 @pager_option
 def _from(client: HTBClient, author, pager):
     """Get boxes from a given author"""
-    import pdb
-
-    pdb.set_trace()
     author_user = client.search(author).users[0]
     box_ids = [m.id for m in author_user.get_content().machines]
     filt = lambda b: b.id in box_ids

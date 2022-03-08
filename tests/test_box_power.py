@@ -1,4 +1,3 @@
-from pytest import raises
 from htbcli.cli import cli
 import hackthebox
 import mock_hackthebox

@@ -1,8 +1,5 @@
-from multiprocessing import connection
-from pytest import fail
 from htbcli.cli import cli
 import hackthebox
-from htbcli.vpn.commands import disconnect
 import mock_hackthebox
 from mock_nm_output import *
 
@@ -226,6 +223,16 @@ def test_vpn_labs(fp, runner):
     result = runner.invoke(cli, ["vpn", "labs", "-t", "vip+", "-r", "sg"])
     assert result.output == "[-] No labs matched that criteria\n"
     assert len(fp.definitions) == 0
+
+
+def test_status(runner, fp):
+    """Test `htb status`"""
+    fp_print_status(fp)
+    res = runner.invoke(cli, ["status"])
+    assert "US VIP 7" in res.output
+    assert "EU Release Lab 1" in res.output
+    assert "IP:              10.10.11.145" in res.output
+    assert "Name:            RouterSpace" in res.output
 
 
 # functions to patch subprocess calls

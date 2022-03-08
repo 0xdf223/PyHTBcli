@@ -54,8 +54,6 @@ def connect(server_str: str, refresh_key: bool):
                 )
                 return
             # always disconnect before switching server or API may break
-            # if server_str == "eu-vip-6":
-            #     import pdb;pdb.set_trace()
             if not nm.disconnect():
                 output.error("Failed to disconnect VPN. Cannot continue.")
                 return
@@ -143,7 +141,6 @@ def connect_ra(region: str, refresh_key: bool):
 
     # see if current VPN_PROFILE_NAME matches target
     current_htbcli_ra_server = nm.get_vpn_server(VPN_PROFILE_NAME_RA)
-    # import pdb;pdb.set_trace()
     if refresh_key or current_htbcli_ra_server != util.format_name(
         vpn_server.friendly_name
     ):

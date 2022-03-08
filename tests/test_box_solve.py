@@ -1,7 +1,4 @@
-from pytest import raises
 from htbcli.cli import cli
-import hackthebox
-import mock_hackthebox
 
 
 def test_box_submit_flag(monkeypatch, runner):
