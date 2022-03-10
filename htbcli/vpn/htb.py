@@ -1,7 +1,6 @@
 from pydoc import cli
 import click
 from hackthebox import HTBClient, VPNServer
-from hackthebox.errors import CannotSwitchWithActive
 from . import util
 
 

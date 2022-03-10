@@ -1,5 +1,4 @@
 """box list commands"""
-from unittest import case
 import click
 from hackthebox import HTBClient
 from typing import Callable

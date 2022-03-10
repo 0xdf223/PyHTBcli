@@ -1,5 +1,4 @@
 """VPN commands"""
-from turtle import pd
 import click
 import os
 from tempfile import TemporaryDirectory

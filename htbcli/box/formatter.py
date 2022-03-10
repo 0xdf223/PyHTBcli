@@ -1,7 +1,6 @@
 """Functions to print box information"""
 import click
-from prettytable import PLAIN_COLUMNS, PrettyTable
-from typing import List, Optional, Tuple
+from typing import List, Tuple
 from hackthebox import HTBClient
 from hackthebox.machine import Machine
 from .. import output
