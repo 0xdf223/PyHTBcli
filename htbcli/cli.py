@@ -8,6 +8,7 @@ HackTheBox Command Line Interface
 .. moduleauthor:: 0xdf <0xdf@hackthebox.eu>
 """
 from email.policy import default
+from json.decoder import JSONDecodeError
 import click
 from click_shell import shell
 from hackthebox import HTBClient
@@ -56,10 +57,13 @@ def cli(ctx, cache_cred, cache_location):
     if cache_cred == "None":
         client = HTBClient()
     else:
-        client = HTBClient(
-            cache=os.path.expanduser(cache_location),
-            remember=(cache_cred == "Long"),
-        )
+        try:
+            client = HTBClient(
+                cache=os.path.expanduser(cache_location),
+                remember=(cache_cred == "Long"),
+            )
+        except JSONDecodeError:
+            client = HTBClient()
     ctx.obj = client
 
 
