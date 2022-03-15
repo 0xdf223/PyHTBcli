@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.5] 15 Mar 2022
+- Added error handling for a bad cache creds file.
+
 ## [0.0.4] 10 Mar 2022
 - Fixed broken import causing errors in some systems.
 
