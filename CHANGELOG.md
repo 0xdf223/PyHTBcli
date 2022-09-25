@@ -2,9 +2,8 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.0.6.1] 25 Sept 2022
+## [0.0.7] 25 Sept 2022
 - Fixed bug in printing boxes for VIP+
-- .1 added to fix messed up versions on PyPI
 
 ## [0.0.5] 15 Mar 2022
 - Added error handling for a bad cache creds file.

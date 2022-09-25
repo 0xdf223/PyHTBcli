@@ -8,4 +8,4 @@ This module contains project version information.
 .. moduleauthor:: 0xdf <0xdf@hackthebox.eu>
 """
 
-__version__ = "0.0.6.1"  #: the working version
+__version__ = "0.0.7"  #: the working version
