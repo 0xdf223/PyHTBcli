@@ -45,6 +45,7 @@ def print_machine_table(
         name = click.style(
             machine.name, fg=DIFFCOLOR.get(machine.difficulty.lower(), "blue")
         )
+        ip = machine.ip if machine.ip else "-----------"
         stars = click.style(f"{machine.stars:.1f}⭐", fg="yellow")
         user = click.style(
             f"{machine.user_owns:>5}\uf2c0", fg="cyan" if machine.user_owned else ""
@@ -55,7 +56,7 @@ def print_machine_table(
         retired = " " if machine.retired else click.style("\uf091", fg="yellow")
         todo_indicator = click.style("\uf7d0", fg="red") if machine.id in todo else " "
         lines.append(
-            f"{os:<5} {name:<23} {machine.ip:<14} {stars} {user} {root}   {retired} {todo_indicator}"
+            f"{os:<5} {name:<23} {ip:<14} {stars} {user} {root}   {retired} {todo_indicator}"
         )
 
     output = "\n".join(lines)
