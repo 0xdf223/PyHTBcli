@@ -1,3 +1,5 @@
+**This repo is no longer maintained, and no longer works :(**
+
 # htbcli
 HackTheBox Command Line Tool
 
